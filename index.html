@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exam 1 week 2 of JS 2</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <header class="head">
+        <h1 class="h1glav">User management</h1>
+
+        <input class="search" type="search" placeholder="search...">
+        
+    </header>
+    <button class="btnAdd">create New User</button>
+
+
+    <table>
+        <thead>
+            <tr>
+                <th>id</th>
+                <th>name</th>
+                <th>email</th>
+                <th>compailed</th>
+                <th>Aktion</th>
+                
+            </tr>
+        </thead>
+        <tbody class="tbody"></tbody>
+    </table>
+
+    <dialog class="dialodAdd">
+       
+            <label for="name">Name</label>
+            <input type="text" id="nameAd" name="name"><br><br>
+            <label for="email">Email</label>
+            <input type="text" id="emailAd" name="email"><br><br>
+       
+     
+        <button class="AddUserbt">Add</button>
+        <button class="btnCancel">Cancel</button>
+    </dialog>
+
+    <dialog class="dialogInfo">
+        <h2>Info</h2>
+        <h1 id="infoName"></h1>
+        <h3 id="infoEmail"></h3>
+        <button class="infocl">Close</button>
+    </dialog>
+
+    <dialog class="dialogEdit">
+        <h2>Edit</h2>
+        <input id="editName" type="text"><br><br>
+        <input id="editEmail" type="text"><br><br>
+        <button class="editbt">Edit</button>
+        <button class="btnCloseEdit">Cancel</button>
+
+    </dialog>
+
+
+   
+    <script src="app.js"></script>
+</body>
+</html>
